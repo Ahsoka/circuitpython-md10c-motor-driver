@@ -63,7 +63,7 @@ class Motor:
         self.dir.value = value < 0
         self.pwm.duty_cycle = int(0xFFFF * abs(value))
 
-    def __enter__(self) -> "DCMotor":
+    def __enter__(self) -> "Motor":
         return self
 
     def __exit__(
