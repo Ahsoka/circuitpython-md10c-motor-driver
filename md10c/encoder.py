@@ -1,3 +1,5 @@
+from .motor import Motor
+
 import microcontroller
 import digitalio
 import rotaryio
